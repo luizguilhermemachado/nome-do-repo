@@ -1,0 +1,31 @@
+{
+  "name": "clean-ddd",
+  "version": "1.0.0",
+  "description": "Design dirigido à dominio",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^10.0.0",
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/node": "^24.5.2",
+    "eslint": "^8.57.1",
+    "eslint-plugin-vitest-globals": "^1.5.0",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.18"
+  }
+}

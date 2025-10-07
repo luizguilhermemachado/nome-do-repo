@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    /* Saída e módulos */
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+
+    /* Node + Vitest */
+    "types": ["node", "vitest/globals"],
+
+    /* React (se usar no projeto) */
+    "jsx": "react-jsx",
+
+    /* Segurança e checagem */
+    "strict": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    /* Mapas de código */
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    /* Alias para imports */
+    "baseUrl": "./",
+    "paths": {
+    "@/*": ["./src/*"],
+    "@test/*": ["./test/*"]
+}
+  },
+  "include": ["src", "vite.config.ts", "test"],
+  "exclude": ["node_modules", "dist"]
+}
