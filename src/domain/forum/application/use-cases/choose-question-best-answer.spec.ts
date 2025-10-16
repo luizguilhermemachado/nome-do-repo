@@ -5,7 +5,7 @@ import { InMemoryAnswersRepository } from '@test/repositories/in-memory-answer-r
 import { InMemoryQuestionsRepository } from '@test/repositories/in-memory-question-repository'
 import { ChooseQuestionBestAnswerUseCase } from './choose-question-best-answer'
 import { makeQuestion } from '@test/factories/make-question'
-import { NotAllowedError } from './errors/not-allowed-error'
+import { NotAllowedError } from '../../../../core/errors/errors/not-allowed-error'
 let InMemoryQuestionRepository: InMemoryQuestionsRepository
 let InMemoryAnwserRepository: InMemoryAnswersRepository
 let sut: ChooseQuestionBestAnswerUseCase

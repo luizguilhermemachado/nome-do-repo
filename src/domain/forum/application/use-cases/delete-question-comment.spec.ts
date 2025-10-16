@@ -3,7 +3,7 @@ import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 import { DeleteQuestionCommentUseCase } from './delete-question-comment'
 import { InMemoryQuestionCommentRepository } from '@test/repositories/in-memory-question-comment-repository'
 import { makeQuestionComment } from '@test/factories/make-question-comment'
-import { ResourceNotFoundError } from './errors/resource-not-found-error'
+import { ResourceNotFoundError } from '../../../../core/errors/errors/resource-not-found-error'
 
 let InMemoryQuestionsCommentRepository: InMemoryQuestionCommentRepository
 let sut: DeleteQuestionCommentUseCase

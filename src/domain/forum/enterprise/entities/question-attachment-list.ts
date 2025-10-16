@@ -6,6 +6,6 @@ export class QuestionAttachmentList extends WatchedList<QuestionAttachment> {
     a: QuestionAttachment,
     b: QuestionAttachment,
   ): boolean {
-    return a.id === b.id
+    return a.attachmentId.equals(b.attachmentId)
   }
 }
